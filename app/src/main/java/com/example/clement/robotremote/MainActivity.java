@@ -23,8 +23,7 @@ public class MainActivity extends AppCompatActivity {
         WebView myWebView = (WebView) findViewById(R.id.webview);
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        myWebView.loadUrl("http://192.168.42.1:3000");
-
+        myWebView.loadUrl("http://192.168.0.20:9090/stream?width=320&height=200");
         //Starting the thread
         Thread controlMovement;
         controlMovement = new sendingMovement();
